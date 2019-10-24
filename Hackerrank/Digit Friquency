@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int i,n,k,l;
+    char j,st[1000];
+    scanf("%s",st);
+    n=strlen(st);
+    for(i=0,j='0';i<10;i++){
+            l=0;
+       for(k=0;k<n;k++)
+       if(st[k]==j){
+       l++;
+       }
+       j++;
+       printf("%d ",l);
+    }
+    return 0;
+}
